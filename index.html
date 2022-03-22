@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css" />
+<html>
+  <head> </head>
+  <body>
+    <h1>Order savybė</h1>
+    <p>Naudokite order savybę rikiuoti elementams kaip norite:</p>
+    <div class="flex-container">
+      <div style="order: 2">1</div>
+      <div style="order: 3">2</div>
+      <div style="order: 4">3</div>
+      <div style="order: 1">4</div>
+    </div>
+
+    <div class="flex-container">
+      <div style="flex-grow: 1">1</div>
+
+      <div style="flex-grow: 1">2</div>
+
+      <div style="flex-grow: 4">3</div>
+    </div>
+
+    <p>
+      Neleiskime, kad trečiasis flex item elementas sumažėtų tiek, kiek kiti
+      elementai:
+    </p>
+
+    <div class="flex-container">
+      <div>1</div>
+
+      <div>2</div>
+
+      <div style="flex-shrink: 0">3</div>
+
+      <div>4</div>
+
+      <div>5</div>
+
+      <div>6</div>
+
+      <div>7</div>
+
+      <div>8</div>
+
+      <div>9</div>
+
+      <div>10</div>
+    </div>
+
+    <p>Nustatykime pradinį trečiojo flex item elemento ilgį 200 pikselių:</p>
+      
+    <div class="flex-container">
+      
+      <div>1</div>
+      
+      <div style="flex-basis: 150px;">2</div>
+      
+      <div style="flex-basis: 200px">3</div>
+      
+      <div>4</div>
+      
+    </div>
+
+    <p>
+        Padarykime, kad trečiasis flex item elementas nebūtų augantis (0),
+        nesusitraukiantis (0) ir kurio pradinis ilgis 200 pikselių:
+      </p>
+      
+      <div class="flex-container">
+        
+        <div>1</div>
+        
+        <div>2</div>
+        
+        <div style="flex: 0 0 200px">3</div>
+        
+        <div>4</div>
+        
+      </div>
+
+      <h1>Align-self savybė</h1>
+      
+      <p>
+        Align-self: centre; suformatuoja pasirinktą flex item elementą per
+        vidurį konteinerio:
+      </p>
+      
+      <div class="flex-container height200">
+        
+        <div>1</div>
+        
+        <div>2</div>
+        
+        <div style="align-self: center">3</div>
+        
+        <div>4</div>
+        
+      </div>
+
+      <div>
+        <h1>Align-self savybė</h1>
+   
+        <p>
+          Align-self: flex-start; lygiuoja pasirinktą flex item elementą
+          konteinerio viršuje.
+        </p>
+   
+   
+        <div class="flex-container height200">
+    
+          <div>1</div>
+    
+          <div style="align-self: flex-start">2</div>
+    
+          <div style="align-self: flex-end">3</div>
+    
+          <div>4</div>
+    
+        </div>
+
+  </body>
+</html>
